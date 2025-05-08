@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14460.31" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc" pageOrientation="vertical">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14460.16"/>
+    </dependencies>
+    <scenes>
+        <!--WatchSprings-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller title="WatchSprings" id="AgC-eL-Hgc" customClass="MainInterfaceController" customModule="WatchSprings_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <imageView width="1" height="70" alignment="center" id="kn0-Pc-JD5"/>
+                        <label alignment="center" text="STATUS" textAlignment="center" numberOfLines="3" id="its-fN-Jru">
+                            <fontDescription key="font" type="system" pointSize="11"/>
+                        </label>
+                        <label alignment="center" text="Title text" textAlignment="center" numberOfLines="0" id="if8-ws-R47">
+                            <fontDescription key="font" type="system" pointSize="15"/>
+                        </label>
+                        <button width="1" alignment="center" title="Battle Royale News" id="HC2-Sb-agC">
+                            <fontDescription key="font" type="system" pointSize="13"/>
+                            <connections>
+                                <action selector="newsActionWithSender:" destination="AgC-eL-Hgc" id="tXh-DM-rz2"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="center" title="Save The World News" id="aQx-Ag-KCN">
+                            <fontDescription key="font" type="system" pointSize="12"/>
+                            <connections>
+                                <action selector="stwNewsActionWithSender:" destination="AgC-eL-Hgc" id="NI4-64-Kvv"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="center" title="Latest Challenges" id="oaQ-MX-Nbj">
+                            <connections>
+                                <action selector="challengesActionWithSender:" destination="AgC-eL-Hgc" id="fJr-ZO-dh1"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="center" title="Daily Items" id="gpM-tN-ts2">
+                            <connections>
+                                <action selector="storeActionWithSender:" destination="AgC-eL-Hgc" id="QzS-f2-abn"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="center" title="Upcoming Items" id="WXG-vK-ehs">
+                            <connections>
+                                <action selector="upcomingActionWithSender:" destination="AgC-eL-Hgc" id="z3y-jI-WWG"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="center" title="Global Top 10" id="6Gi-1D-EXJ">
+                            <connections>
+                                <action selector="topTenActionWithSender:" destination="AgC-eL-Hgc" id="m43-xW-bpe"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="center" title="Reload All" id="oYL-Nf-ZzE">
+                            <connections>
+                                <action selector="reloadActionWithSender:" destination="AgC-eL-Hgc" id="6i0-d8-Dhe"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="center" title="About" id="iBP-qh-3MH">
+                            <connections>
+                                <action selector="aboutActionWithSender:" destination="AgC-eL-Hgc" id="nZ1-a2-ytd"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <color key="backgroundColor" red="0.32156862745098036" green="0.058823529411764705" blue="0.44705882352941173" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="challengesButton" destination="oaQ-MX-Nbj" id="diY-dJ-rQg"/>
+                        <outlet property="newsButton" destination="HC2-Sb-agC" id="x6Q-cF-xbv"/>
+                        <outlet property="statusLabel" destination="its-fN-Jru" id="fbh-kI-Q7U"/>
+                        <outlet property="storeButton" destination="gpM-tN-ts2" id="hTc-I8-FpH"/>
+                        <outlet property="stwNewsButton" destination="aQx-Ag-KCN" id="fxd-OO-s4W"/>
+                        <outlet property="titleImage" destination="kn0-Pc-JD5" id="Gg7-3O-BjT"/>
+                        <outlet property="titleLabel" destination="if8-ws-R47" id="1OB-CY-80T"/>
+                        <outlet property="topTenButton" destination="6Gi-1D-EXJ" id="heX-NG-7FX"/>
+                        <outlet property="upcomingButton" destination="WXG-vK-ehs" id="jDp-mX-TXf"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="220" y="328.5"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" numberOfLines="0" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                        <segue destination="eXb-UN-Cd0" kind="relationship" relationship="dynamicInteractiveNotificationInterface" id="mpB-YA-K8N"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="484" y="949"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="WatchSprings_WatchKit_App" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="729" y="949"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="Niz-AI-uX2">
+            <objects>
+                <controller id="eXb-UN-Cd0" customClass="NotificationController" customModule="WatchSprings_WatchKit_App" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="231" y="949"/>
+        </scene>
+        <!--News Table Controller-->
+        <scene sceneID="ads-zH-0CO">
+            <objects>
+                <controller identifier="NewsTableController" title="News Table Controller" id="ioX-Q4-B7D" customClass="NewsTableController" customModule="WatchSprings_WatchKit_Extension">
+                    <items>
+                        <table alignment="left" id="ZJ2-4f-6cm">
+                            <items>
+                                <tableRow identifier="NewsRow" id="IE4-Bd-vlo" customClass="NewsRowController" customModule="WatchSprings_WatchKit_App" customModuleProvider="target">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" radius="12" id="edQ-z4-lgL">
+                                        <items>
+                                            <imageView width="1" height="70" alignment="center" id="bFy-w3-N3B"/>
+                                            <label width="1" height="24" alignment="center" text="News Title" textAlignment="center" id="Pxd-6J-Vw7"/>
+                                            <label width="1" height="38" alignment="center" text="News Body" textAlignment="center" numberOfLines="3" id="PkE-JO-pZQ"/>
+                                        </items>
+                                        <color key="backgroundColor" red="0.015686274509803921" green="0.47843137254901957" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </group>
+                                    <connections>
+                                        <outlet property="rowBody" destination="PkE-JO-pZQ" id="CGi-fl-LWR"/>
+                                        <outlet property="rowImage" destination="bFy-w3-N3B" id="4np-YB-uxe"/>
+                                        <outlet property="rowTitle" destination="Pxd-6J-Vw7" id="E5w-cp-qQx"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                            <color key="backgroundColor" red="0.043137254901960784" green="0.35686274509803922" blue="0.65490196078431373" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </table>
+                    </items>
+                    <color key="backgroundColor" red="0.043137254901960784" green="0.35686274509803922" blue="0.65490196078431373" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="newsTable" destination="ZJ2-4f-6cm" id="2Fa-MG-b84"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="478" y="333"/>
+        </scene>
+        <!--News Detail-->
+        <scene sceneID="1MS-Uh-sDQ">
+            <objects>
+                <controller identifier="NewsDetail" title="News Detail" id="gHz-dR-n9c" customClass="NewsDetailController" customModule="WatchSprings_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label width="1" alignment="center" verticalAlignment="center" text="Label" textAlignment="center" numberOfLines="0" id="2TM-kk-IZS"/>
+                    </items>
+                    <color key="backgroundColor" red="0.015686274510000001" green="0.47775680585714286" blue="0.66833147321428577" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="newsText" destination="2TM-kk-IZS" id="u6z-BO-2Yx"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="742" y="333"/>
+        </scene>
+        <!--Top Ten-->
+        <scene sceneID="6EQ-Sw-FjP">
+            <objects>
+                <controller identifier="TopTenTableController" title="Top Ten" id="LW6-n8-cWb" customClass="TopTenTableController" customModule="WatchSprings_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <table alignment="left" id="aF0-Qp-g4Q">
+                            <items>
+                                <tableRow identifier="TopTenRow" id="EAt-bR-jWo" customClass="TopTenRowController" customModule="WatchSprings_WatchKit_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" radius="12" id="fad-ZK-I04">
+                                        <items>
+                                            <label width="1" height="24" alignment="center" text="Top Ten Title" textAlignment="center" id="hhe-eJ-7zI"/>
+                                            <label width="1" height="38" alignment="center" text="Top Ten Body" textAlignment="center" numberOfLines="3" id="xxD-L9-sw5"/>
+                                        </items>
+                                        <color key="backgroundColor" red="0.80047433035714288" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </group>
+                                    <connections>
+                                        <outlet property="rowBody" destination="xxD-L9-sw5" id="r1A-te-aRC"/>
+                                        <outlet property="rowTitle" destination="hhe-eJ-7zI" id="8FO-Rp-ZI1"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <color key="backgroundColor" red="1" green="0.14901960784313725" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="toptenTable" destination="aF0-Qp-g4Q" id="LBP-sA-k51"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="478" y="24"/>
+        </scene>
+        <!--Player-->
+        <scene sceneID="br1-P4-XWw">
+            <objects>
+                <controller identifier="TopTenDetail" title="Player" id="Q81-3N-D6j" customClass="TopTenDetailController" customModule="WatchSprings_WatchKit_Extension">
+                    <items>
+                        <label width="1" alignment="center" text="Label" textAlignment="center" numberOfLines="0" id="AOB-pa-f6y"/>
+                    </items>
+                    <color key="backgroundColor" red="0.80000000000000004" green="0.14901960784313725" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="playerDetailText" destination="AOB-pa-f6y" id="1gR-Ml-nvg"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="729" y="24"/>
+        </scene>
+        <!--About-->
+        <scene sceneID="HoF-Ws-fH7">
+            <objects>
+                <controller identifier="AboutViewController" title="About" id="jNf-QM-ZAP" customClass="AboutViewController" customModule="WatchSprings_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label width="1" alignment="center" verticalAlignment="center" textAlignment="center" numberOfLines="0" id="ipO-W2-qFT">
+                            <mutableString key="text">WatchSprings is Fan Content pursuant to the Epic Games Fan Content Policy. Portions of the materials used are trademarks and/or copyrighted works of Epic Games, Inc. All rights reserved by Epic. This material is not official and is not endorsed by Epic. Epic, Epic Games, the Epic Games logo, Fortnite, the Fortnite logo, Unreal, Unreal Engine, the Unreal Engine logo, Unreal Tournament, and the Unreal Tournament logo are trademarks or registered trademarks of Epic Games, Inc. in the United States of America and elsewhere.  WatchSprings © 2018 Mark S. Morris All rights reserved</mutableString>
+                            <fontDescription key="font" type="boldSystem" pointSize="10"/>
+                        </label>
+                        <label height="20" alignment="center" verticalAlignment="bottom" text="VERSION" textAlignment="center" id="DCC-dc-efu">
+                            <fontDescription key="font" type="boldSystem" pointSize="10"/>
+                        </label>
+                    </items>
+                    <color key="backgroundColor" red="0.73725490196078436" green="0.57647058823529407" blue="0.16078431372549018" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="legalText" destination="ipO-W2-qFT" id="hs2-vO-OmT"/>
+                        <outlet property="versionLabel" destination="DCC-dc-efu" id="M8v-7u-kDT"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="978" y="347"/>
+        </scene>
+        <!--Challenges-->
+        <scene sceneID="Q1D-hc-ZSz">
+            <objects>
+                <controller identifier="ChallengesTableController" title="Challenges" id="umZ-qL-l0m" customClass="ChallengesTableController" customModule="WatchSprings_WatchKit_Extension">
+                    <items>
+                        <table alignment="left" id="E14-cZ-unX">
+                            <items>
+                                <tableRow identifier="ChallengesRow" id="L2P-Js-mo1" customClass="ChallengesRowController" customModule="WatchSprings_WatchKit_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" id="bo4-sO-uZ2">
+                                        <items>
+                                            <label width="120" height="24" alignment="center" text="Challenge Week" textAlignment="center" id="tbG-qo-uYb"/>
+                                        </items>
+                                        <color key="backgroundColor" red="0.0" green="0.5" blue="0.24960937499999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    </group>
+                                    <connections>
+                                        <outlet property="rowText" destination="tbG-qo-uYb" id="4R3-LH-BVN"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                            <color key="backgroundColor" red="0.31755022319999998" green="0.58755963330000005" blue="0.10683593750000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </table>
+                    </items>
+                    <color key="backgroundColor" red="0.31764705882352939" green="0.58823529411764708" blue="0.10588235294117647" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="challengesTable" destination="E14-cZ-unX" id="xlg-yM-o2S"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="478" y="-274"/>
+        </scene>
+        <!--Week-->
+        <scene sceneID="lje-Bp-wNk">
+            <objects>
+                <controller identifier="ChallengesDetailTable" title="Week" id="IbG-tK-yXo" customClass="ChallengesDetailTableController" customModule="WatchSprings_WatchKit_Extension">
+                    <items>
+                        <table alignment="left" id="ymA-3A-UR1">
+                            <items>
+                                <tableRow identifier="ChallengesDetailRow" selectable="NO" id="xE5-BO-xkr" customClass="ChallengesDetailRowController" customModule="WatchSprings_WatchKit_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" radius="12" id="MxW-mg-jWb">
+                                        <items>
+                                            <label width="1" alignment="center" text="Challenge" textAlignment="center" numberOfLines="0" id="6SK-Sg-zZE"/>
+                                            <imageView width="100" height="50" alignment="center" id="3YM-dd-whN"/>
+                                            <label width="1" alignment="center" verticalAlignment="bottom" text="Label" textAlignment="center" numberOfLines="0" id="2lW-aU-qxN">
+                                                <accessibilityTraits key="accessibilityTraits" staticText="YES" notEnabled="YES"/>
+                                            </label>
+                                        </items>
+                                        <color key="backgroundColor" red="0.0" green="0.49803921568627452" blue="0.25098039215686274" alpha="1" colorSpace="calibratedRGB"/>
+                                    </group>
+                                    <connections>
+                                        <outlet property="detailRowBody" destination="2lW-aU-qxN" id="Wpn-dt-zfX"/>
+                                        <outlet property="detailRowImage" destination="3YM-dd-whN" id="lhv-z8-Jd2"/>
+                                        <outlet property="detailRowTitle" destination="6SK-Sg-zZE" id="KkF-dG-fpG"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <color key="backgroundColor" red="0.31764705882352939" green="0.58823529411764708" blue="0.10588235294117647" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="challengesDetailTable" destination="ymA-3A-UR1" id="1vc-vn-K8b"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="723" y="-274"/>
+        </scene>
+        <!--Upcoming Items-->
+        <scene sceneID="Jt7-AL-IrW">
+            <objects>
+                <controller identifier="UpcomingTableController" title="Upcoming Items" id="yaF-ZU-K0d" customClass="UpcomingTableController" customModule="WatchSprings_WatchKit_Extension">
+                    <items>
+                        <table alignment="left" id="aRH-TQ-oEK">
+                            <items>
+                                <tableRow identifier="UpcomingRow" selectable="NO" id="l4y-oD-Tgz" customClass="UpcomingRowController" customModule="WatchSprings_WatchKit_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" radius="12" id="BVW-p8-LuT">
+                                        <items>
+                                            <label width="1" alignment="center" text="Upcoming Title" textAlignment="center" numberOfLines="0" id="wuH-fJ-wLp"/>
+                                            <imageView alignment="center" verticalAlignment="center" id="NYE-kY-1Qd"/>
+                                            <label width="1" alignment="center" verticalAlignment="bottom" text="Upcoming Body" textAlignment="center" numberOfLines="0" id="swl-I6-RuV"/>
+                                        </items>
+                                        <color key="backgroundColor" red="0.015686274510000001" green="0.47775680585714286" blue="0.66833147321428577" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </group>
+                                    <connections>
+                                        <outlet property="cellBody" destination="swl-I6-RuV" id="0rU-VZ-pJl"/>
+                                        <outlet property="cellImage" destination="NYE-kY-1Qd" id="zeG-oB-YIS"/>
+                                        <outlet property="cellTitle" destination="wuH-fJ-wLp" id="RQc-gj-qXx"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                            <color key="backgroundColor" red="0.043137254901960784" green="0.35686274509803922" blue="0.65490196078431373" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </table>
+                    </items>
+                    <color key="backgroundColor" red="0.043137254901960784" green="0.35686274509803922" blue="0.65490196078431373" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="upcomingTable" destination="aRH-TQ-oEK" id="R27-Yz-Oaj"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="478" y="633"/>
+        </scene>
+        <!--Daily Items-->
+        <scene sceneID="cuC-wy-wUr">
+            <objects>
+                <controller identifier="StoreTableController" title="Daily Items" id="Ns6-xH-sEx" customClass="StoreTableController" customModule="WatchSprings_WatchKit_Extension">
+                    <items>
+                        <table alignment="left" id="U7f-PI-laS">
+                            <items>
+                                <tableRow identifier="StoreRow" selectable="NO" id="jdn-PJ-vSE" customClass="StoreRowController" customModule="WatchSprings_WatchKit_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" radius="12" id="WKC-sp-mVZ">
+                                        <items>
+                                            <label width="1" alignment="center" text="Daily Title" textAlignment="center" numberOfLines="0" id="WD7-yX-t9V"/>
+                                            <imageView alignment="center" verticalAlignment="center" id="snN-3G-xaY"/>
+                                            <label width="1" alignment="center" verticalAlignment="bottom" text="Daily Body" textAlignment="center" numberOfLines="0" id="Qcf-Ce-JYa"/>
+                                        </items>
+                                        <color key="backgroundColor" red="0.015686274510000001" green="0.47775680590000003" blue="0.66833147319999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </group>
+                                    <connections>
+                                        <outlet property="cellBody" destination="Qcf-Ce-JYa" id="D0U-W6-0Du"/>
+                                        <outlet property="cellImage" destination="snN-3G-xaY" id="Oyg-nc-am6"/>
+                                        <outlet property="cellTitle" destination="WD7-yX-t9V" id="ZB0-J4-akH"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                            <color key="backgroundColor" red="0.043137254899999998" green="0.35686274509999999" blue="0.65490196079999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </table>
+                    </items>
+                    <color key="backgroundColor" red="0.043137254899999998" green="0.35686274509999999" blue="0.65490196079999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="storeTable" destination="U7f-PI-laS" id="3R3-Si-pHr"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="742" y="633"/>
+        </scene>
+    </scenes>
+</document>

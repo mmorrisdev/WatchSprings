@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:background="#BC9329"
+        android:textColor="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".functions.about.AboutActivity"
+        tools:deviceIds="wear"
+        android:padding="@dimen/box_inset_layout_padding">
+
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/inner_frame_layout_padding">
+
+        <LinearLayout
+                android:id="@+id/aboutLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="fill_vertical"
+                android:orientation="vertical">
+
+            <ImageView
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:layout_weight="1"
+                    android:maxHeight="80dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/title" />
+
+            <Space
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+            </Space>
+
+            <TextView
+                    android:id="@+id/legalText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:textAlignment="center"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/about_text"/>
+
+            <Space
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+            </Space>
+
+            <TextView
+                    android:id="@+id/version"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:textAlignment="center"
+                    android:layout_gravity="center_horizontal"
+                    android:text="VERSION"/>
+
+            <Space
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/table_footer"
+                    android:layout_marginBottom="16dp"
+                    android:layout_weight="1" >
+            </Space>
+
+        </LinearLayout>
+
+
+
+    </FrameLayout>
+</ScrollView>

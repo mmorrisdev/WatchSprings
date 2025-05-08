@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController wantsFullScreenLayout="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="WatchSprings" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchImage.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ya2-fG-LSk">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please install WatchSprings on your Apple Watch" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AdS-S5-nEy">
+                                <rect key="frame" x="66" y="53" width="243" height="107"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="107" id="bo4-DH-oiA"/>
+                                    <constraint firstAttribute="width" constant="243" id="jYY-x7-Xcz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="24"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WatchSprings © 2018 Mark S. Morris All rights reserved " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MPT-sO-PaY">
+                                <rect key="frame" x="37" y="425" width="300" height="59"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="59" id="REv-3t-xYE"/>
+                                    <constraint firstAttribute="width" constant="300" id="RWM-Fl-fvC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZZB-CA-JJc">
+                                <rect key="frame" x="26.5" y="491" width="322" height="31"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="WatchSprings is part of the ">
+                                            <attributes>
+                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="17" name="MarkerFelt-Thin"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="uplink.to">
+                                            <attributes>
+                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="17" name="MarkerFelt-Thin"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                                <integer key="NSUnderline" value="1"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content=" network">
+                                            <attributes>
+                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="17" name="MarkerFelt-Thin"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="uplinktoButtonActionWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ap6-xG-9Ps"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VERSION" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ghh-5U-xtx">
+                                <rect key="frame" x="67" y="386" width="243" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="243" id="0Qk-Gt-cA2"/>
+                                    <constraint firstAttribute="height" constant="29" id="kWm-2D-U6c"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="All product names, trademarks and registered trademarks are property of their respective owners" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c3c-4d-F7h">
+                                <rect key="frame" x="59.5" y="532" width="256" height="67"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="67" id="Y9o-p7-Hpg"/>
+                                    <constraint firstAttribute="width" constant="256" id="jHL-Bp-5zA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EBT-5d-BDA">
+                                <rect key="frame" x="43" y="165" width="294" height="207"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="207" id="Ax8-VT-sEI"/>
+                                    <constraint firstAttribute="width" constant="294" id="V6g-Vs-jYk"/>
+                                </constraints>
+                                <string key="text">WatchSprings is Fan Content pursuant to the Epic Games Fan Content Policy. Portions of the materials used are trademarks and/or copyrighted works of Epic Games, Inc. All rights reserved by Epic. This material is not official and is not endorsed by Epic. Epic, Epic Games, the Epic Games logo, Fortnite, the Fortnite logo, Unreal, Unreal Engine, the Unreal Engine logo, Unreal Tournament, and the Unreal Tournament logo are trademarks or registered trademarks of Epic Games, Inc. in the United States of America and elsewhere.</string>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="13"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ya2-fG-LSk" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="6s7-2K-luC"/>
+                            <constraint firstItem="ya2-fG-LSk" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="9A5-FE-RYc"/>
+                            <constraint firstItem="EBT-5d-BDA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="2.5" id="9K4-W3-tWd"/>
+                            <constraint firstItem="AdS-S5-nEy" firstAttribute="centerX" secondItem="Uee-0j-aNJ" secondAttribute="centerX" id="Adu-sf-s0N"/>
+                            <constraint firstItem="AdS-S5-nEy" firstAttribute="centerY" relation="lessThanOrEqual" secondItem="Uee-0j-aNJ" secondAttribute="top" constant="100" id="B4i-Ab-TK1"/>
+                            <constraint firstItem="ZZB-CA-JJc" firstAttribute="top" secondItem="MPT-sO-PaY" secondAttribute="bottom" constant="7" id="Eir-Sp-BZb"/>
+                            <constraint firstItem="MPT-sO-PaY" firstAttribute="top" secondItem="Ghh-5U-xtx" secondAttribute="bottom" constant="10" id="FE3-HP-qWV"/>
+                            <constraint firstItem="c3c-4d-F7h" firstAttribute="top" secondItem="ZZB-CA-JJc" secondAttribute="bottom" constant="10" id="ILN-Et-e8F"/>
+                            <constraint firstItem="Ghh-5U-xtx" firstAttribute="centerX" secondItem="Uee-0j-aNJ" secondAttribute="centerX" constant="1" id="MzX-57-Z7c"/>
+                            <constraint firstItem="ya2-fG-LSk" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="TCx-Oa-9lG"/>
+                            <constraint firstItem="Ghh-5U-xtx" firstAttribute="centerY" secondItem="Uee-0j-aNJ" secondAttribute="centerY" constant="57" id="bkr-Zk-nCf"/>
+                            <constraint firstItem="MPT-sO-PaY" firstAttribute="centerX" secondItem="ZZB-CA-JJc" secondAttribute="centerX" constant="-0.5" id="cda-AX-4pO"/>
+                            <constraint firstItem="AdS-S5-nEy" firstAttribute="bottom" secondItem="EBT-5d-BDA" secondAttribute="top" constant="-5" id="fRM-XZ-eN5"/>
+                            <constraint firstItem="c3c-4d-F7h" firstAttribute="centerX" secondItem="ZZB-CA-JJc" secondAttribute="centerX" id="g8Y-GR-Xq9"/>
+                            <constraint firstItem="ya2-fG-LSk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="jn0-2D-Lnh"/>
+                            <constraint firstItem="MPT-sO-PaY" firstAttribute="centerX" secondItem="AdS-S5-nEy" secondAttribute="centerX" constant="-0.5" id="pK6-8T-H0O"/>
+                            <constraint firstItem="EBT-5d-BDA" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-65" id="wbc-hA-4iu"/>
+                            <constraint firstItem="c3c-4d-F7h" firstAttribute="bottom" relation="lessThanOrEqual" secondItem="Uee-0j-aNJ" secondAttribute="bottom" constant="-20" id="yVZ-5B-T1I"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Uee-0j-aNJ"/>
+                    </view>
+                    <connections>
+                        <outlet property="versionLabel" destination="Ghh-5U-xtx" id="lln-Qz-wma"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="LaunchImage.jpg" width="640" height="1136"/>
+    </resources>
+</document>

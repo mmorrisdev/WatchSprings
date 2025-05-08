@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryDark">#511471</color>
+    <color name="colorPrimary">#692f85</color>
+    <color name="colorAccent">#ffffff</color>
+    <color name="text_color_primary">#ffffff</color>
+    <color name="purplebg">#511471</color>
+    <color name="purplebuttonbg">#692f85</color>
+    <color name="greenstatusbg">#218b1f</color>
+    <color name="redtatusbg">#ed0909</color>
+</resources>
