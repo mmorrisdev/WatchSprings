@@ -1,0 +1,72 @@
+[versions]
+android-gradle-plugin = "8.11.1"
+androidx-activity = "1.10.1"
+androidx-compose-bom = "2025.08.01"
+androidx-wear-compose = "1.5.0"
+compose-compiler = "1.5.15"
+compose-ui-tooling = "1.5.0"
+ktlint = "0.50.0"
+media3-exoplayer = "1.8.0"
+media3-ui = "1.8.0"
+org-jetbrains-kotlin = "1.9.25"
+robolectric = "4.16"
+roborazzi = "1.50.0"
+slf4j-simple = "2.0.17"
+ui-test-junit4 = "1.9.0"
+ui-test-manifest = "1.9.0"
+ktor = "3.2.3"
+kotlinx-serialization = "1.9.0"
+kotlinx-coroutines = "1.10.2"
+kotlin = "2.2.10"
+coil = "2.7.0"
+slf4j = "2.0.17"
+
+[libraries]
+androidx-activity-compose = { module = "androidx.activity:activity-compose", version.ref = "androidx-activity" }
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "androidx-compose-bom" }
+androidx-compose-ui-tooling = { module = "androidx.wear.compose:compose-ui-tooling", version.ref = "compose-ui-tooling" }
+androidx-material-icons-core = { module = "androidx.compose.material:material-icons-core" }
+androidx-media3-exoplayer = { module = "androidx.media3:media3-exoplayer", version.ref = "media3-exoplayer" }
+androidx-media3-ui = { module = "androidx.media3:media3-ui", version.ref = "media3-ui" }
+androidx-splashscreen =  "androidx.core:core-splashscreen:1.0.1"
+androidx-ui-test-junit4 = { module = "androidx.compose.ui:ui-test-junit4", version.ref = "ui-test-junit4" }
+androidx-ui-test-manifest = { module = "androidx.compose.ui:ui-test-manifest", version.ref = "ui-test-manifest" }
+compose-ui-test-junit4 = { module = "androidx.compose.ui:ui-test-junit4" }
+compose-ui-tooling = { module = "androidx.compose.ui:ui-tooling" }
+compose-ui-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview" }
+desugar-jdk-libs = "com.android.tools:desugar_jdk_libs:2.1.5"
+
+junit = "junit:junit:4.13.2"
+kotlin-gradle-plugin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "org-jetbrains-kotlin" }
+robolectric = { module = "org.robolectric:robolectric", version.ref = "robolectric" }
+roborazzi = { group = "io.github.takahirom.roborazzi", name = "roborazzi", version.ref = "roborazzi" }
+roborazzi-compose = { group = "io.github.takahirom.roborazzi", name = "roborazzi-compose", version.ref = "roborazzi" }
+roborazzi-rule = { group = "io.github.takahirom.roborazzi", name = "roborazzi-junit-rule", version.ref = "roborazzi" }
+slf4j-simple = { module = "org.slf4j:slf4j-simple", version.ref = "slf4j-simple" }
+slf4j-nop = { module = "org.slf4j:slf4j-nop", version.ref = "slf4j" }
+test-espresso-core = "androidx.test.espresso:espresso-core:3.7.0"
+test-ext-junit = "androidx.test.ext:junit:1.3.0"
+wear-compose-foundation = { module = "androidx.wear.compose:compose-foundation", version.ref = "androidx-wear-compose" }
+wear-compose-material = { module = "androidx.wear.compose:compose-material", version.ref = "androidx-wear-compose" }
+wear-compose-navigation = { module = "androidx.wear.compose:compose-navigation", version.ref = "androidx-wear-compose" }
+# --- Ktor HTTP Client ---
+ktor-client-core = { module = "io.ktor:ktor-client-core", version.ref = "ktor" }
+ktor-client-cio = { module = "io.ktor:ktor-client-cio", version.ref = "ktor" }
+ktor-client-content-negotiation = { module = "io.ktor:ktor-client-content-negotiation", version.ref = "ktor" }
+ktor-serialization-kotlinx-json = { module = "io.ktor:ktor-serialization-kotlinx-json", version.ref = "ktor" }
+
+# --- Serialization ---
+kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinx-serialization" }
+
+# --- Coroutines ---
+kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinx-coroutines" }
+
+coil-compose = { module = "io.coil-kt:coil-compose", version.ref = "coil" }
+
+[plugins]
+com-android-application = { id = "com.android.application", version.ref = "android-gradle-plugin" }
+com-diffplug-spotless = "com.diffplug.spotless:7.2.1"
+roborazzi = { id = "io.github.takahirom.roborazzi", version.ref = "roborazzi" }
+org-jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+

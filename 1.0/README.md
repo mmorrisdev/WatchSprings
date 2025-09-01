@@ -12,9 +12,7 @@ This code illustrates
 - The use of shared file, class, and function prototype naming conventions across platforms
 - A common object hierarchy outside of platform specific areas
 
-<br><img src="https://watchsprings.com/images/WatchMain1.jpg">&nbsp;<img src="https://watchsprings.com/images/wosWatchMain1.png">
+<br><img src="https://watchsprings.com/images/1/WatchMain1.jpg">&nbsp;<img src="https://watchsprings.com/images/1/wosWatchMain1.png">
 <br>
-<img src="https://watchsprings.com/images/WatchMain2.jpg">&nbsp;<img src="https://watchsprings.com/images/wosWatchMain2.png">
-
-More screenshots of this version running can be seen at [watchsprings.com](https://watchsprings.com/support1.htm)
+<img src="https://watchsprings.com/images/1/WatchMain2.jpg">&nbsp;<img src="https://watchsprings.com/images/1/wosWatchMain2.png">
 
